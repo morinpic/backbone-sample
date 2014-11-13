@@ -2,7 +2,8 @@
   "name": "sample-browserify",
   "description": "",
   "scripts": {
-    "dev": "beefy assets/js/index.js:bundle.js --live"
+    "dev": "beefy assets/js/index.js:bundle.js --live",
+    "build": "browserify assets/js/app.js > assets/js/bundle.js"
   },
   "devDependencies": {
     "beefy": "^2.1.1",
@@ -10,6 +11,9 @@
   },
   "dependencies": {
     "backbone": "^1.1.2",
-    "jquery": "^2.1.1"
+    "express": "^3.1.0",
+    "jquery": "^2.1.1",
+    "mongoose": "^3.8.19",
+    "path": "^0.4.9"
   }
 }
